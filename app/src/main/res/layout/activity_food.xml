@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ItemsActivity.FoodsActivity">
+
+
+    <TextView
+        android:id="@+id/textViewDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Foods"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="60dp"
+        android:background="#FFFFFF"
+        android:onClick="clickHamburger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDrinks"
+        app:srcCompat="@drawable/food" />
+
+    <ImageButton
+        android:id="@+id/buttonSpagetti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:onClick="clickSpagetti"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBurger"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonBurger"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/spagetti" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Burger"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBurger"
+        app:layout_constraintStart_toStartOf="@+id/buttonBurger"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBurger" />
+
+    <ImageButton
+        android:id="@+id/buttonPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:background="#FFFFFF"
+        android:onClick="clickPizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDrinks"
+        app:srcCompat="@drawable/pizza" />
+
+    <ImageButton
+        android:id="@+id/buttonLasagna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#FFFFFF"
+        android:onClick="clickLasagna"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPizza"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonPizza"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/lasagna" />
+
+    <TextView
+        android:id="@+id/textViewJusApel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Pizza"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPizza"
+        app:layout_constraintStart_toStartOf="@+id/buttonPizza"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPizza" />
+
+    <TextView
+        android:id="@+id/textViewJusAlpukat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Lasagna"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLasagna"
+        app:layout_constraintStart_toStartOf="@+id/buttonLasagna"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLasagna" />
+
+    <TextView
+        android:id="@+id/textViewJusMangga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Spagetti"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSpagetti"
+        app:layout_constraintStart_toStartOf="@+id/buttonSpagetti"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSpagetti" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp40.000"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp35.000"
+        app:layout_constraintEnd_toEndOf="@+id/textViewJusApel"
+        app:layout_constraintStart_toStartOf="@+id/textViewJusApel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJusApel" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp21.000"
+        app:layout_constraintEnd_toEndOf="@+id/textViewJusMangga"
+        app:layout_constraintStart_toStartOf="@+id/textViewJusMangga"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJusMangga" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp33.000"
+        app:layout_constraintEnd_toEndOf="@+id/textViewJusAlpukat"
+        app:layout_constraintStart_toStartOf="@+id/textViewJusAlpukat"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJusAlpukat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

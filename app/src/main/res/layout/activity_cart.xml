@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CartActivity">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/constraintTotalPrice"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_margin="20dp">
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:text="Total:"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewBalance" />
+
+      <TextView
+          android:id="@+id/textViewTotalPrice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="20dp"
+          android:text="Rp0"
+          android:textColor="#ff0000"
+          android:textSize="18sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/textView"
+          app:layout_constraintTop_toBottomOf="@+id/textViewBalance" />
+
+      <Button
+          android:id="@+id/buttonPay"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginRight="10dp"
+          android:onClick="clickPay"
+          android:text="Pay Now"
+          app:backgroundTint="#ff0000"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewBalance" />
+
+      <TextView
+          android:id="@+id/textView22"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Your balance is"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textViewBalance"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:text="Rp2.000.000"
+          android:textColor="#64b5f6"
+          android:textSize="18sp"
+          app:layout_constraintEnd_toEndOf="@+id/textView22"
+          app:layout_constraintStart_toStartOf="@+id/textView22"
+          app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <ListView
+       android:id="@+id/listView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </ListView>
+
+</LinearLayout>
