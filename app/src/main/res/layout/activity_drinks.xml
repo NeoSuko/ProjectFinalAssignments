@@ -57,11 +57,11 @@
         android:id="@+id/buttonAvocadoJuice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:background="#FFFFFF"
         android:onClick="clickJusAlpukat"
         app:layout_constraintEnd_toEndOf="@+id/buttonAppleJuice"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/buttonAppleJuice"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/alpukat" />
